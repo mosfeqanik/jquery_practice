@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+    $("document").ready(function(){
+        $("#add-class").click(function(){
+            $("p:first").addClass("color");
+        });
+        $("#remove-class").click(function(){
+            $("p:first").removeClass("color");
+        });
+        $("#toggle-class").click(function(){
+            $("p:first").toggleClass("color");
+        });
+        $("#increase-class").click(function(){
+            $("p:first").css("font-size","+=1px");
+        });
+    });
+    </script>
+    <style>
+        .color{
+            color: #00D8FF;
+        }
+    </style>
+</head>
+<body>
+    <a href="#"id="add-class">add class</a>
+    <a href="#"id="remove-class">remove class</a>
+    <a href="#"id="toggle-class">toggle class</a>
+    <a href="#"id="increase-class">increase class</a>
+        <p>
+            1 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+        </p>
+        <p >2 Duis aute irure 
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+        <p>
+            3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+        </p>
+        
+         <p >
+            4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+        </p>
+        <p >5 Duis aute irure 
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+</body>
+</html>
